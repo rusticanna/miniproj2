@@ -8,20 +8,23 @@
     <script src="miniproj2.js"></script>
 </head>
 <body>
-    <!--Sleep Hours: <input type="text" id="sleepHours" required>
-    Age: <input type="text" id="age" required>
-    Region: <input type="text" id="region" required>
-    <button onclick="sleepHours">Run Function</button> -->
+    <form>
+        Sleep Hours: <input type="text" id="sleepHours" required>
+        Age: <input type="text" id="age" required>
+        Region: <input type="text" id="region" required>
+        <button onclick="calcSleepHours">Run Function</button>
+    </form>
     <script>
-        /* var sleep = document.getElementById("sleepHours")
-        var age = document.getElementById("age");
-        var region = document.getElementById("region");
-        if (sleep > 0 && age > 0 && region != "") {
-            sleepHours(sleep,age,region);
-        } else {
-            alert("Missing arguments")
-        } */
-        sleepHours(10,44,"america");
+        function calcSleepHours(){
+            var sleep = document.getElementById("sleepHours")
+            var age = document.getElementById("age");
+            var region = document.getElementById("region");
+            if (sleep > 0 && age > 0 && region != "") {
+                sleepHours(sleep,age,region);
+            } else {
+                alert("Missing arguments")
+            }
+        }
     </script>
 </body>
 </html>
